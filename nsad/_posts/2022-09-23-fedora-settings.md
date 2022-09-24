@@ -8,6 +8,8 @@ group: true
 hide_last_modified: true
 image: /assets/img/fedora.jpeg
 ---
+## Fedora Set Up
+
 
 ## Fedora Linux
 Fedora Linux is a Linux distribution developed by the Fedora Project and is the upstream source for Red Hat Enterprise Linux.

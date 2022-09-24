@@ -54,12 +54,12 @@ menu:
   - title:             NSAD
     url:               /nsad/
   
-  - title:             Example  
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
-    url:               /about/
+  # - title:             Example  
+  #   url:               /example/
+  # - title:             Documentation
+  #   url:               /docs/
+  # - title:             About
+  #   url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -85,15 +85,15 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+#remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/index_bg.jpgx #/assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -124,7 +124,7 @@ defaults:
     values:
       accent_color:    rgb(38,139,210)
       theme_color:     rgb(32,32,32)
-      accent_image:
+      accent_image:    
         background:    rgb(32,32,32)
         overlay:       false
 
