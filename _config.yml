@@ -49,25 +49,30 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             DATA COMM & IN
-    url:               /dc/
-  - title:             NET SEC APP DEV
-    url:               /ns/
+  - title:             DCIN
+    url:               /dcin/
+  - title:             NSAD
+    url:               /nsad/
+  
+  - title:             Example  
+    url:               /example/
+  - title:             Documentation
+    url:               /docs/
   - title:             About
     url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
-legal:
-  - title:             LICENSE
-    url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+# legal:
+#   - title:             LICENSE
+#     url:               /LICENSE/
+#   - title:             NOTICE
+#     url:               /NOTICE/
+#   - title:             CHANGELOG
+#     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2022. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -80,8 +85,8 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+#remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
