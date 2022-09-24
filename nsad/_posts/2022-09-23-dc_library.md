@@ -62,6 +62,19 @@ To apply configuration, type:
     ldconfig
 ```
 
+### 6) Run cmake
+Tell cmake that we will use *3rdparty* library
+
+
+> 1) Move to *libconfig* in *dc* directory
+```
+    cd /dc/3rdparty/libconfig
+```
+> 2) Run *cmake --install cmake-build-debug/*
+```
+    cmake --install cmake-build-debug/
+```
+
 
 ### Add) Update when new version released
 Go to *dc* and run:
