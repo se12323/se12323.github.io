@@ -29,7 +29,7 @@ description:           >
   with a focus on knowledge sharing that are meant to not become a jobless after graduation.
 
 # A shorter description for the sidebar.
-tagline: Stupids without night
+tagline: Your shame is my paradise
 
 # A list of keywords for your blog
 keywords:              []
@@ -37,7 +37,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/323.jpg
+logo:                  /assets/img/323.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -93,7 +93,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/index_bg.jpg #/assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/index_bg.jpeg #/assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
