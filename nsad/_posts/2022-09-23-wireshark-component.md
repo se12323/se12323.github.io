@@ -69,7 +69,7 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 **: Display filter for rules that Wireshark uses for coloring<br/><br/>**
 
 
-## Ethernet II (**L2<span style="color:red"> Data-Link Layer</span>**)
+## Ethernet II (**<span style="color:red">Data-Link Layer</span>**)
 ![Ethernet II](/assets/img/nsad/wireshark_component/ethernet.png "Ethernet II")
 ![Ethernet II_EX](/assets/img/nsad/wireshark_component/ethernet_ex.png "Ethernet II_EX")
 
@@ -86,7 +86,7 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 > - **c.f) In the picture, it is marked as IP (0x0800), which means that the IP header follows**
 
 
-## Internet Protocol - IPv4 Header (**L3<span style="color:red"> Network Layer</span>**)
+## Internet Protocol - IPv4 Header (**<span style="color:red">Network Layer</span>**)
 ![IPv4 Header](/assets/img/nsad/wireshark_component/ipv4_header.png "IPv4 Header")
 ![IPv4 Header_EX](/assets/img/nsad/wireshark_component/ipv4_header_ex.png "IPv4 Header_EX")
 
