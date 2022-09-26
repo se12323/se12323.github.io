@@ -100,8 +100,9 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 **: Indicates the length of the IP header (IP header used in general communication is 20 bytes without any options)<br/><br/>**
 > **<span style="color:black">Differentiated Services Field</span>** 
 **: Indicates the importance of the packet<br/>**
-- **c.f) In the picture, the sevice type and priority for communication are indicated<br/>**
-- **p.s) All 0's are displayed on the screen, which indicates standard priority without performing special bandwith control or QoS usch as 'remove unimportant packets'<br/><br/>**
+> - **c.f) In the picture, the sevice type and priority for communication are indicated<br/>**
+> - **p.s) All 0's are displayed on the screen, which indicates standard priority without performing special bandwith control or QoS usch as 'remove unimportant packets'<br/><br/>**
+> 
 > **<span style="color:black">Total Length</span>** 
 **: Indicates the total length of packet in bytes<br/><br/>**
 > **<span style="color:black">Identification</span>** 
