@@ -6,7 +6,7 @@ description: >
 sitemap: false
 group: true
 hide_last_modified: true
-image: /assets/img/dcgit.png
+image: /assets/img/nsad/dc_library/dcgit.png
 ---
 ## DC Library Set Up
 

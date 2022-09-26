@@ -6,7 +6,7 @@ description: >
 sitemap: false
 group: true
 hide_last_modified: true
-image: /assets/img/fedora.jpeg
+image: /assets/img/nsad/fedora_settings/fedora.jpeg
 ---
 ## Fedora Set Up
 
