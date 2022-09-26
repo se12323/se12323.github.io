@@ -24,8 +24,8 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 |Presentation Layer|6|Data (I/O data into a single expression) has the format of <span style="color:red">conversion, compression, encryption and decryption</span>|JPEG, MPEG, AFP|Data
 |Session Layer|5|Compose communication session,<br/> <span style="color:red">Port connection/control/management</span>, etc.| <span style="color:blue">SSH</span>, TSL|Data
 |Transport Layer|4|Reliable <span style="color:red">Data Transmission(TCP)</span>|<span style="color:blue">TCP,UDP</span>|Segment
-|Network Layer|3|<span style="color:red">Establishing data transmission routes</span><br/>(responsible for routing between physical networks)|IP, ICMP|<span style="color:blue">Packet</span>
-|Data-Link Layer|2|Data <span style="color:red">error detection</span>, flow control|<span style="color:blue">Ethernet</span>|Frame
+|[Network Layer](#internet-protocol---ipv4-header-network-layer)|3|<span style="color:red">Establishing data transmission routes</span><br/>(responsible for routing between physical networks)|IP, ICMP|<span style="color:blue">Packet</span>
+|[Data-Link Layer](#ethernet-ii-data-link-layer)|2|Data <span style="color:red">error detection</span>, flow control|<span style="color:blue">Ethernet</span>|Frame
 |Physical Layer|1|Converts <span style="color:red">data into electrical signals</span>|HUB wire, fiber optic cable|<span style="color:blue">Bit</span>
 
 
@@ -68,4 +68,24 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 > **<span style="color:black">Coloring Rule String</span>**
 **: Display filter for rules that Wireshark uses for coloring<br/><br/>**
 
-## Ethernet II (Data-Link Layer)
+
+## Ethernet II (**L2<span style="color:red"> Data-Link Layer</span>**)
+![Ethernet II](/assets/img/nsad/wireshark_component/ethernet.png "Ethernet II")
+![Ethernet II_EX](/assets/img/nsad/wireshark_component/ethernet_ex.png "Ethernet II_EX")
+
+- Packets in red squares are MAC-related information. This part contains ***MAC protocol*** information<br/>
+(p.s. ***MAC (physical address) protocol*** : Protocol structure according to IEEE802 standard of DataLinkLayer)
+- **MAC address**: The **<span style="color:red">48-bit</span>** hardware address of the network card.<br/>
+
+> **<span style="color:black">Destination</span>** 
+**: MAC address of the DESTINATION LAN card<br/><br/>**
+> **<span style="color:black">Source</span>** 
+**: MAC address of the SOURCE LAN card<br/><br/>**
+> **<span style="color:black">Type</span>** 
+**: Indicate the header format following 'Ethernet II'(known as Ether Type)<br/><br/>**
+> **c.f) In the figure, it is marked as IP (0x0800), which means that the IP header follows**
+
+
+## Internet Protocol - IPv4 Header (**L3<span style="color:red"> Network Layer</span>**)
+![IPv4 Header](/assets/img/nsad/wireshark_component/ipv4_header.png "IPv4 Header")
+![IPv4 Header_EX](/assets/img/nsad/wireshark_component/ipv4_header_ex.png "IPv4 Header_EX")
