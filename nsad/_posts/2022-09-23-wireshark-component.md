@@ -1,4 +1,4 @@
----
+b---
 layout: post
 title: Wireshark Component
 description: >
@@ -82,10 +82,60 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 > **<span style="color:black">Source</span>** 
 **: MAC address of the SOURCE LAN card<br/><br/>**
 > **<span style="color:black">Type</span>** 
-**: Indicate the header format following 'Ethernet II'(known as Ether Type)<br/><br/>**
-> **c.f) In the figure, it is marked as IP (0x0800), which means that the IP header follows**
+**: Indicate the header format following 'Ethernet II'(known as Ether Type)<br/>**
+> - **c.f) In the picture, it is marked as IP (0x0800), which means that the IP header follows**
 
 
 ## Internet Protocol - IPv4 Header (**L3<span style="color:red"> Network Layer</span>**)
 ![IPv4 Header](/assets/img/nsad/wireshark_component/ipv4_header.png "IPv4 Header")
 ![IPv4 Header_EX](/assets/img/nsad/wireshark_component/ipv4_header_ex.png "IPv4 Header_EX")
+
+- IPv4 is an IP address (32-bit) and plays a role in determining the route from the source to the destination.
+
+- (If you see the packet, it seems to check the IP address of the source and destination)
+
+> **<span style="color:black">Version</span>** 
+**: Indicates the IP version<br/><br/>**
+> **<span style="color:black">Header Length</span>** 
+**: Indicates the length of the IP header (IP header used in general communication is 20 bytes without any options)<br/><br/>**
+> **<span style="color:black">Differentiated Services Field</span>** 
+**: Indicates the importance of the packet<br/>**
+- **c.f) In the picture, the sevice type and priority for communication are indicated<br/>**
+- **p.s) All 0's are displayed on the screen, which indicates standard priority without performing special bandwith control or QoS usch as 'remove unimportant packets'<br/><br/>**
+> **<span style="color:black">Total Length</span>** 
+**: Indicates the total length of packet in bytes<br/><br/>**
+> **<span style="color:black">Identification</span>** 
+**: Indicates packet identification information<br/><br/>**
+> **<span style="color:black">Flags</span>** 
+**: Indicates packet identification information<br>**
+> - **'Reserved bit' part is reserved for IP protocol extension in the future<br/>**
+> - **'Don't Fragment' is a bit to prohibit packet fragmentation<br/>**
+>   - **<span style="color:black">1</span> : Prohibit packet splitting**
+>   - **<span style="color:black">0</span> : packet segmentation possible**
+> - **'More Fragments' is a bit to indicate that fragmented packets are continued after<br/>**
+>   - **<span style="color:black">1</span> : There are packets that are split and continue**
+>   - **<span style="color:black">0</span> : No consecutive packets**
+> 
+> **<span style="color:black">Fragment offset</span>** 
+**: Indicates the position of the current packet within the segmented packet<br/>** 
+> - **c.f) In the picture, it is 0, which means it is the first packet)<br/><br/>**
+>
+> **<span style="color:black">Time to live</span>** 
+**: Packet lifetime (how long it can survive)<br/>**
+> - **p.s) This number has a structure in which the value decreases by 1 when a packet is transmitted to the network as it passes through the router<br/>**
+> - **p.s) When the value becomes 0, the packet can no longer exist, and the packet is dropped by the router or layer 3 switch</br>**
+> 
+> **<span style="color:black">Protocol</span>** 
+**: Specifies the header format to follow after the IP<br/>**
+> - **c.f) In this picture, we can see that the TCP header is followed.<br/>**
+> 
+> **<span style="color:black">Header checksum</span>** 
+**: Check whether the IP header of the packet is incorrect by comparing the calculated value by putting the contents of the IP header into the calculation formula and the header checksum value<br/><br/>**
+> **<span style="color:black">Source</span>** 
+**: Indicates the SOURCE IP address<br/><br/>**
+> **<span style="color:black">Destination</span>** 
+**: Indicates the DESTINATION IP address<br/><br/>**
+> **<span style="color:black">Source GeoIP</span>** 
+**: Refers to the GeoIP database from the source IP address to indicate the location where the IP address is connected.<br/><br/>**
+> **<span style="color:black">Destination GeoIP</span>** 
+**: Refers to the GeoIP database from the destination IP address to indicate the location where the IP address is connected.<br/><br/>**
