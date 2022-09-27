@@ -69,7 +69,7 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 **: Display filter for rules that Wireshark uses for coloring<br/><br/>**
 
 
-## Ethernet II (**L2<span style="color:red"> Data-Link Layer</span>**)
+## [Ethernet II (**<span style="color:red">Data-Link Layer</span>**)](#osi-7-layer)
 ![Ethernet II](/assets/img/nsad/wireshark_component/ethernet.png "Ethernet II")
 ![Ethernet II_EX](/assets/img/nsad/wireshark_component/ethernet_ex.png "Ethernet II_EX")
 
@@ -86,7 +86,7 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 > - **c.f) In the picture, it is marked as IP (0x0800), which means that the IP header follows**
 
 
-## Internet Protocol - IPv4 Header (**L3<span style="color:red"> Network Layer</span>**)
+## [Internet Protocol - IPv4 Header (**<span style="color:red">Network Layer</span>**)](#osi-7-layer)
 ![IPv4 Header](/assets/img/nsad/wireshark_component/ipv4_header.png "IPv4 Header")
 ![IPv4 Header_EX](/assets/img/nsad/wireshark_component/ipv4_header_ex.png "IPv4 Header_EX")
 
@@ -140,3 +140,52 @@ Wireshark is simply a packet capture analysis program that helps you analyze pac
 **: Refers to the GeoIP database from the source IP address to indicate the location where the IP address is connected.<br/><br/>**
 > **<span style="color:black">Destination GeoIP</span>** 
 **: Refers to the GeoIP database from the destination IP address to indicate the location where the IP address is connected.<br/><br/>**
+
+
+## [TCP Protocol (**<span style="color:red">Network Layer</span>**)](#osi-7-layer)
+![TRANSPORT](/assets/img/nsad/wireshark_component/transport.png "TRANSPORT")
+![TRANSPORT_EX](/assets/img/nsad/wireshark_component/transport_ex.png "TRANSPORT_EX")
+
+- The yellow box contains information about the transport layer and TCP Protocol.
+> **<span style="color:black">Source Port</span>** 
+**: Port number that identifies the application process of the sending side<br/><br/>**
+> **<span style="color:black">Destination Port</span>** 
+**: Port number that identifies the application process on the receiving side<br/><br/>**
+> **<span style="color:black">Stream index</span>** 
+**: In Wireshark, in order to make it easier to trace or analyze a TCP connection, it analyzes the stream from the beginning to the end of the TCP connection as a single TCP stream, and assigns the stream number in the order in which it appears in the packet.<br/>**
+> - **c.f) In this picture, since it is the third TCP stream, index number 3 is attached.<br/><br/>**
+> 
+> **<span style="color:black">TCP Segment Len</span>** 
+**: Indicates length of TCP stream<br/><br/>**
+> **<span style="color:black">Sequence number</span>** 
+**: The position of the TCP segment currently being transmitted is displayed as a number.<br/><br/>**
+> **<span style="color:black">Next sequence number</span>** 
+**: The next sequence number appears (Actually, it is a number obtained by adding the size of the TCP data to be transmitted to the current sequence number)<br/><br/>**
+> **<span style="color:black">Acknowledgement number</span>** 
+**: Indicates position of the received TCP segment<br/>**
+> - **The number of bytes received becomes the acknowledgment number<br/>**
+> - **The acknowledgment number is set to the *initial sequence number + 1* at the time of connection, and the number of bytes in the receive segment is added<br/>**
+> 
+> **<span style="color:black">Header Length</span>** 
+**: The size of the TCP header is displayed<br/>**
+> - **Just like the IP header, the length of the header without options is 20 bytes<br/><br/>**
+>
+> **<span style="color:black">Flags</span>** 
+**: Control communication<br/>**
+> - **Reserved: a part reserved for future expansion of the TCP protocol<br/>**
+> - **Nonce: a value is used in a structure called ECN-nonce, and is used for packet congestion control with the following ECN-Echo<br/>**
+> - **Congestion Window Reduced: is used to reduce the size of data sent once when the network is congested<br/>**
+> - **Urgent: used with the IP option to embed urgent data into normal communication (It is not used for security reasons) (called urgent pointer flag)<br/>**
+> - **Acknowledgment: is also called ACK flag, and when 'ON', the acknowledgment number is validated<br/>**
+> - **Push: when it is 'ON', the push function that collects the data accumulated in the receive buffer until then and passes it to the program becomes effective (By collecting information and passing it on to the program, efficient communication can be achieved) (called PSH flag)<br/>**
+> - **Reset: when it's ON, TCP communication is forcibly terminated. (Like a firewall, this can prevent a virus attack by adding the RST flag to the packet sent from the other party) (called RST flag)<br/>**
+> - **Syn: is used to start communication (called the SYN flag)<br/>**
+> - **Fin: is used as a communication termination means (called FIN flag)<br/>**
+>
+> **<span style="color:black">Window Size</span>** 
+**: Represents a receive buffer for continuously receiving TCP packets (also called RWIN)<br/><br/>**
+> **<span style="color:black">Checksum</span>** 
+**: Check the contents of the TCP header and its segment<br/><br/>**
+> **<span style="color:black">SEQ/ACK analysis</span>** 
+**: Function that is added in header by expert is displayed in '[  ]'.<br/><br/>**
+
