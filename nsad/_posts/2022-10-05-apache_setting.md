@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apache Setting (COMP7006_LAB_1)
+title: Apache Setting
 description: >
     This is how to use Data Communication Library.
 sitemap: false
@@ -9,7 +9,7 @@ hide_last_modified: true
 image: /assets/img/nsad/apache_setting/apache.png
 ---
 
-## Apache server
+## Apache Server Creation (COMP7006_LAB 1)
 
 
 ## Fedora Install
@@ -76,7 +76,7 @@ OR
 > ```
 > 4\) Edit userdir.conf
 > ```
->   nano -w userdir.con
+>   nano -w userdir.conf
 > ```
 > 5\) Comment out '**UserDir disable**' macro and and uncomment the '**UserDir public_html**'
 > ```
