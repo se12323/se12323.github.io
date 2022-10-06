@@ -6,7 +6,7 @@ description: >
 sitemap: false
 group: true
 hide_last_modified: true
-image: /assets/img/nsad/wireshark_component/apache.png
+image: /assets/img/nsad/apache_setting/apache.png
 ---
 
 ## Apache server
