@@ -48,13 +48,13 @@ OR
 
 
 ### 4. Change the 'http://localhost (HOST) homepage
-```
-    cd /var/www/html
-```
+>```
+>    cd /var/www/html
+>```
 > Create your own index.html
-```
-    nano -w index.html
-```
+>```
+>    nano -w index.html
+>```
 > *You don't have to restart httpd<br/>*
 > ***The page served by httpd is a generic page included in the Linux distribution.***
 
