@@ -82,8 +82,18 @@ Of course, the log output by the application program is also generally classifie
 > |   none   | Do not save messages under any circumstances|
 > |     *    | Messages for anything that happens          |
 > 
-> - It indicates the level of risk and sends a message only when it is higher than the set level of risk.
->
->  - If you use '=' in front of a level, it means that the level is the same as the level of risk.
->  - Type of priority (listed from lowest to highest risk level)
+> - It indicates the level of risk and sends a message only when it is higher than the set level of risk.<br/>
+> - If you use '=' in front of a level, it means that the level is the same as the level of risk.<br/>
+> - Type of priority (listed from lowest to highest risk level)<br/>
+> - \<Facility>.\<Priority>   ex) auth.alert
+
+> ### Action
+> | Type     | Description                                 |
+> |----------|---------------------------------------------|
+> |   file   | Add content to the file                     |
+> |   @host  | Send a message to the specified host        |
+> |   user   | Send a message to the specified user's screen |
+> |    *     | Sends a message to the screen of all currently logged in users |
+> 
+
 
