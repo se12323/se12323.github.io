@@ -64,11 +64,11 @@ Of course, the log output by the application program is also generally classifie
 >|uucp|Messages raised by the UUCP system|
 >|local 0~7|Type left over for additional use|
 
-> *※ If you add '.none' after the facility, it means that the facility is excluded <br/>*
-> ex) mail.none means that mail-related messages are excluded <br/>
+*※ If you add '.none' after the facility, it means that the facility is excluded <br/>*
+ex) mail.none means that mail-related messages are excluded <br/>
 
 ### Priority
-> 
+
 > | Priority | Description |
 > |----------|-------------|
 > |  debug   | Messages raised when debugging a program    |
@@ -81,11 +81,11 @@ Of course, the log output by the application program is also generally classifie
 > |   emerg  | A dangerous situation that should be communicated to all users |
 > |   none   | Do not save messages under any circumstances|
 > |     *    | Messages for anything that happens          |
-> 
-> - It indicates the level of risk and sends a message only when it is higher than the set level of risk.<br/>
-> - If you use '=' in front of a level, it means that the level is the same as the level of risk.<br/>
-> - Type of priority (listed from lowest to highest risk level)<br/>
-> - \<Facility>.\<Priority>   ex) auth.alert
+
+- It indicates the level of risk and sends a message only when it is higher than the set level of risk.<br/>
+- If you use '=' in front of a level, it means that the level is the same as the level of risk.<br/>
+- Type of priority (listed from lowest to highest risk level)<br/>
+- \<Facility>.\<Priority>   ex) auth.alert
 
 ### Action
 > 
