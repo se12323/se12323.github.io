@@ -67,7 +67,7 @@ Of course, the log output by the application program is also generally classifie
 > *※ If you add '.none' after the facility, it means that the facility is excluded <br/>*
 > ex) mail.none means that mail-related messages are excluded <br/>
 
-> ### Priority
+### Priority
 > 
 > | Priority | Description |
 > |----------|-------------|
@@ -87,7 +87,7 @@ Of course, the log output by the application program is also generally classifie
 > - Type of priority (listed from lowest to highest risk level)<br/>
 > - \<Facility>.\<Priority>   ex) auth.alert
 
-> ### Action
+### Action
 > 
 > | Type | Description |
 > |------|-------------|
