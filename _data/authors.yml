@@ -23,7 +23,7 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     #twitter:         <username>
-    #github:          https://github.com/se12323/se12323.github.io
+     github:          <https://github.com/HyungJoonLEE>
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
@@ -53,6 +53,7 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
+     linkedin:        <https://www.linkedin.com/in/hyungjoon-lee-5737a5204/>
     # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
