@@ -17,7 +17,7 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  en, ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 SE12-323
@@ -29,7 +29,7 @@ description:           >
   with a focus on knowledge sharing that are meant to not become a jobless after graduation.
 
 # A shorter description for the sidebar.
-tagline: Your shame is my paradise
+tagline: I algorithmically affirm that I am about to debug
 
 # A list of keywords for your blog
 keywords:              []
@@ -49,8 +49,6 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             DCIN
-    url:               /dcin/
   - title:             NSAD
     url:               /nsad/
   
@@ -93,7 +91,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/index_bg.jpeg #/assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/se12323.png #/assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
