@@ -25,8 +25,7 @@ title:                 SE12-323
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  SE12-323 is for BCIT students in DC option and NSAD academics,
-  with a focus on knowledge sharing that are meant to not become a jobless after graduation.
+  I solemnly swear that I am up to no good
 
 # A shorter description for the sidebar.
 tagline: I algorithmically affirm that I am about to debug
@@ -42,7 +41,7 @@ logo:                  /assets/img/se12323_profile.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                 Network Security Application Development Students
+  name:                Klaiden
   email:               <klaiden92@gmail.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
