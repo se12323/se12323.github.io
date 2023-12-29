@@ -51,11 +51,11 @@ menu:
   - title:             BTech
     url:               /Content/BTech/
   
-   - title:             Algorithm
-     url:               /Content/Algorithm/
+  - title:             Algorithm
+    url:               /Content/Algorithm/
 
-   - title:             Travel
-     url:               /Content/Travel/
+  - title:             Travel
+    url:               /Content/Travel/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
