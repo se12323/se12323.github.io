@@ -3,10 +3,10 @@
 layout: list
 
 # The title of the tag's page.
-title: Network Security Application Development
+title: BTech
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: nsad
+slug: BTech
 
 order: 1
 # (Optional) Write a short (~150 characters) description of this featured tag.
