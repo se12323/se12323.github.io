@@ -20,9 +20,9 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Your Site Title
+title   : SE12-323
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  I solemnly swear that I am up to no good.
 
 
 ## => Language and Timezone
@@ -35,10 +35,10 @@ timezone: 	Canada/Pacific # see https://en.wikipedia.org/wiki/List_of_tz_databas
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : SE12-323
+  name      : HyungJoon LEE
   url       :
   avatar    : /assets/img/se12323_profile.png
-  bio       : I solemnly swear that I am up to no good.
+  bio       :
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -48,8 +48,8 @@ author:
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : https://www.linkedin.com/in/hyungjoon-lee-5737a5204/ # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : https://github.com/HyungJoonLEE # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  linkedin  : hyungjoon-lee-5737a5204 # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : HyungJoonLEE # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
