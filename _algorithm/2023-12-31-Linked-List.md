@@ -1,6 +1,6 @@
 ---
+permalink: /algorithm/linkedlist
 layout: article
-permalink: /algorithm.html
 title: Linked List
 tags: LinkedList
 article_header:

@@ -200,6 +200,10 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  -
+collections:
+  algorithm:
+    output: true
 
 defaults:
   - scope:
@@ -214,6 +218,14 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+
+  ## Algorithm
+  - scope:
+      path:
+      type: algorithm
+    values:
+      nav_key: algorithm
+      show_date: false
 
 
 ## => Plugins
