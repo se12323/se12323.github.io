@@ -3,6 +3,7 @@ permalink: /algorithm/linkedlist
 layout: article
 title: Linked List
 tags: LinkedList
+categories: algorithm
 article_header:
 type: cover
 image:

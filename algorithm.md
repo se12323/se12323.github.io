@@ -10,9 +10,20 @@ articles:
     show_info: true
 ---
 
-<ul>
-  {% for author in site.algorithm %}
-      <h2><a href="{{ algorithm.url }}">{{ algorithm.title }}</a></h2>
-  {% endfor %}
-</ul>
+[//]: # (<ul>)
 
+[//]: # (  {% for algo in site.algorithm %})
+
+[//]: # (      <h2><a href="{{ algo.url }}">{{ algo.title }}</a></h2>)
+
+[//]: # (  {% endfor %})
+
+[//]: # (</ul>)
+
+<ul>
+{% for article in site.posts %}
+  {% if article.categories contains 'algorithm' %}
+      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3> 
+  {% endif %}
+{% endfor %}
+</ul>

@@ -102,4 +102,4 @@ header:
         fr-LU   : *FR
         tr      : &TR       BCIT
         # @end locale config
-        url: /_posts/BCIT/
+        url: /bcit.html

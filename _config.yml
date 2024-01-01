@@ -200,10 +200,10 @@ exclude:
   - /screenshots
   - /test
   - /vendor
-  -
-collections:
-  algorithm:
-    output: true
+
+#collections:
+#  algorithm:
+#    output: true
 
 defaults:
   - scope:
@@ -220,11 +220,12 @@ defaults:
       pageview: true
 
   ## Algorithm
-  - scope:
-      path: ""
-      type: algorithm
-    values:
-      nav_key: algorithm
+#  - scope:
+#      path:
+#      type: algorithm
+#    values:
+#      nav_key: algorithm
+#      show_date: false
 
 
 ## => Plugins
