@@ -1,13 +1,14 @@
 ---
-permalink: /_posts/algorithm/
+layout: article
+permalink: /algorithm.html
 title: Linked List
-tags: TeXt
+tags: LinkedList
 article_header:
 type: cover
 image:
 src: 
 ---
-
+    
 ## LinkedList.h 
 ```c++
 #ifndef PIE_LINKEDLIST_H

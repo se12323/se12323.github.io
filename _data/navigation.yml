@@ -76,30 +76,30 @@ header:
         fr-LU   : *FR
         tr      : &TR
         # @end locale config
-        url: /_posts/algorithm/
+    url: /algorithm.html
 
   - titles:
         # @start locale config
-        en      : &EN       BTech/BScACS
+        en      : &EN       BCIT
         en-GB   : *EN
         en-US   : *EN
         en-CA   : *EN
         en-AU   : *EN
-        zh-Hans : &ZH_HANS  BTech/BScACS
+        zh-Hans : &ZH_HANS  BCIT
         zh      : *ZH_HANS
         zh-CN   : *ZH_HANS
         zh-SG   : *ZH_HANS
-        zh-Hant : &ZH_HANT  BTech/BScACS
+        zh-Hant : &ZH_HANT  BCIT
         zh-TW   : *ZH_HANT
         zh-HK   : *ZH_HANT
-        ko      : &KO       BTech/BScACS
+        ko      : &KO       BCIT
         ko-KR   : *KO
-        fr      : &FR       BTech/BScACS
+        fr      : &FR       BCIT
         fr-BE   : *FR
         fr-CA   : *FR
         fr-CH   : *FR
         fr-FR   : *FR
         fr-LU   : *FR
-        tr      : &TR       BTech/BScACS
+        tr      : &TR       BCIT
         # @end locale config
-        url: /_posts/BTech/BScACS/
+        url: /_posts/BCIT/
