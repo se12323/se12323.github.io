@@ -1,5 +1,5 @@
 ---
-permalink: /_posts/algorithm
+permalink: /_posts/algorithm/
 title: Linked List
 tags: TeXt
 article_header:

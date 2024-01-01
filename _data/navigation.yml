@@ -76,7 +76,7 @@ header:
         fr-LU   : *FR
         tr      : &TR
         # @end locale config
-        url: /_posts/algorithm
+        url: /_posts/algorithm/
 
   - titles:
         # @start locale config
@@ -102,4 +102,4 @@ header:
         fr-LU   : *FR
         tr      : &TR       BTech/BScACS
         # @end locale config
-        url: /_posts/BTech/BScACS
+        url: /_posts/BTech/BScACS/
