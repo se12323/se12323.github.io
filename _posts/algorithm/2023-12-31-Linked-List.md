@@ -29,23 +29,23 @@ public:
             next = new LinkedList<T>(*cp.next);
     }
 
-    // LinkedList
-    const LinkedList* getNext();
-    const T& getValue();
-    void setNext(LinkedList *elem);
-    void setValue(const T &value);
-    bool insertToLast(LinkedList<T> **head, T val);     // TODO: Need to understand this
-    bool insertToFront(LinkedList<T> **head, T val);    // TODO: Need to understand this
-    bool insertToIndex(LinkedList<T> **head, T val, int index);
+    T& getData() const;
+    
+    // TODO: Need to understand this
+    bool insertAtFront(LinkedList<T> **head, T val);
+
+    // TODO: Need to understand this
+    bool insertAtLast(LinkedList<T> **head, T val);
+
+    // TODO: Need to understand this
+    bool insertAtIndex(LinkedList<T> **head, T val, int index);
+    
     LinkedList<T>* search(LinkedList<T> **head, const T& value);
+
     bool deleteElement(LinkedList<T> **head, LinkedList<T> *delNode);
+    
     void clear(LinkedList<T> **head);
-
-    // Stack Function using LinkedList
-    bool push(LinkedList<T> **stack, T val);
-    bool pop(LinkedList<T> **stack);
-
-
+    
     LinkedList& operator=(const LinkedList &rhs) {
         if (this != &rhs) {
             delete next;  // Free existing resources
@@ -88,8 +88,6 @@ private:
     T            data;
 };
 
-
-
 #endif //PIE_LINKEDLIST_H
 ```
 
@@ -99,31 +97,13 @@ private:
 
 
 template<typename T>
-const LinkedList<T> *LinkedList<T>::getNext() {
-    return next;
-}
-
-
-template<typename T>
-const T &LinkedList<T>::getValue() {
+T &LinkedList<T>::getData() const {
     return data;
 }
 
 
 template<typename T>
-void LinkedList<T>::setNext(LinkedList *node) {
-    next = node;
-}
-
-
-template<typename T>
-void LinkedList<T>::setValue(const T &value) {
-    data = value;
-}
-
-
-template<typename T>
-bool LinkedList<T>::insertToLast(LinkedList<T> **head, T val) {
+bool LinkedList<T>::insertAtLast(LinkedList<T> **head, T val) {
     auto *newNode = new LinkedList<T>(val);
 
     if (!newNode) return false;
@@ -145,7 +125,7 @@ bool LinkedList<T>::insertToLast(LinkedList<T> **head, T val) {
 
 
 template<typename T>
-bool LinkedList<T>::insertToFront(LinkedList<T> **head, T val) {
+bool LinkedList<T>::insertAtFront(LinkedList<T> **head, T val) {
     auto *newNode = new LinkedList<T>(val);
     if (newNode == nullptr) return false;
     else {
@@ -158,13 +138,14 @@ bool LinkedList<T>::insertToFront(LinkedList<T> **head, T val) {
 
 
 template<typename T>
-bool LinkedList<T>::insertToIndex(LinkedList<T> **head, T val, int index) {
+bool LinkedList<T>::insertAtIndex(LinkedList<T> **head, T val, int index) {
     LinkedList<T> *current = *head;
-    if (*head == nullptr) return false;
-    if (index <= 0) return false;
+    if (*head == nullptr)   return false;
+    if (index <= 0)         return false;
 
     auto *newNode = new LinkedList<T>(val);
-    if (!newNode) return false;
+    if (!newNode)           return false;
+
     if (index == 1) {
         *head = newNode;
         newNode->next = current;
@@ -193,12 +174,12 @@ LinkedList<T>* LinkedList<T>::search(LinkedList<T> **head, const T& value) {
 
     while (current != nullptr) {
         if (current->data == value) {
-            return current; // Value found, return the node
+            return current; // Value found
         }
         current = current->next;
     }
 
-    return nullptr; // Value not found, return nullptr
+    return nullptr; // Value not found
 }
 
 
@@ -234,67 +215,14 @@ bool LinkedList<T>::deleteElement(LinkedList<T> **head, LinkedList<T> *delNode) 
 }
 
 
-/**
- * @breif 'push()' using Linked List
- * @parameter 'stack' is actually head of LinkedList
- */
-template<typename T>
-bool LinkedList<T>::push(LinkedList<T> **stack, T val) {
-    auto *newNode = new LinkedList<T>(val);
-    if (newNode == nullptr) return false;
-
-    if (!(*stack)) {
-        *stack = newNode;
-        return true;
-    }
-    else {
-        LinkedList<T> *temp = *stack;
-        while (temp->next) {
-            temp = temp->next;
-        }
-        temp->next = newNode;
-        return true;
-    }
-}
-
-
-/**
- * @breif 'pop()' using Linked List
- * @parameter 'stack' is actually head of LinkedList
- */
-template<typename T>
-bool LinkedList<T>::pop(LinkedList<T> **stack) {
-    if (*stack == nullptr) return false;
-
-    // stack has only one node (head)
-    if ((*stack)->next == nullptr) {
-        delete *stack;
-        *stack = nullptr;
-        return true;
-    }
-
-    // stack has multiple nodes
-    LinkedList<T> *current = *stack;
-    LinkedList<T> *before = nullptr;
-
-    while (current->next != nullptr) {
-        before = current;
-        current = current->next;
-    }
-
-    delete current;
-    before->next = nullptr;
-    return true;
-}
-
-
 template<typename T>
 void LinkedList<T>::clear(LinkedList<T> **head) {
     if (*head == nullptr) return;
     LinkedList<T> *delNode = *head;
     while (delNode) {
+        // Todo: if Node data used dynamic memory, need to delete as well
         LinkedList<T> *after = delNode->next;
-        delete delNode; // Use delete instead of free
+        delete delNode;
         delNode = after;
     }
     *head = nullptr;
@@ -328,10 +256,8 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         card randomCard = generateRandomCard();
-//        // TODO: This is for original LinkedList
-//        head->insertToFront(&head, randomCard);
-//        // TODO: This is for stack using LinkedList
-        head->push(&head, randomCard);
+        // TODO: This is for original LinkedList
+        head->insertToFront(&head, randomCard);
     }
 
 //    for (auto it = head->begin(); it != head->end(); ++it) {
@@ -342,8 +268,7 @@ int main() {
     for (auto c : *head) {
         std::cout << "Card: " << c.shape << " " << c.num << std::endl;
     }
-
-
+    
     head->clear(&head);
 }
 ```
