@@ -5,16 +5,18 @@ layout: article
 
 
 ## Introduction
-Hello! My name is **Hyung Joon LEE**. 
+Hello! My name is **Klaiden**, the owner of this page.
 
-I'm passionate about **network security**, **programming**, and **taking pictures**.
+This website is for my notes and travel recording.
 
-![Your Photo](/assets/images/about/about.jpg)  <!-- Replace 'URL_to_your_photo.jpg' with the actual URL of your photo -->
+I'm passionate about **network security**, **solving problems**, and **taking pictures**.
+
+![Your Photo](/assets/images/about/about.jpg)
 
 
 ## Professional Background
-I have a background in **Biology**, **Immunology**, and **Computer Science**. 
-Currently, I am a **student** at **BCIT(British Columbia Institute of Technology)**.
+I have a background in **Biology - Immunology**, and **Computer Science**. <br /> 
+Currently, I am a student at **BCIT(British Columbia Institute of Technology)**.
 
 
 ### Experience
@@ -26,6 +28,7 @@ Currently, I am a **student** at **BCIT(British Columbia Institute of Technology
 ## Education
 - **[2022 - 2024]** : B.Sc. - Applied Computer Science (Network Security Applications Development Option) at BCIT
 - **[2020 - 2022]** : Diploma - Computer Systems (Data communications & Internetworking option) at BCIT
+- **[2019 - 2020]** : Quit graduate studies - Microbiology and Immunology at Université de Montréal
 - **[2015 - 2019]** : B.Sc. - Biology at University of Ulsan
 
 
@@ -59,6 +62,20 @@ principles of Seq and Ack. <br />
 - Taking pictures
 - Playing the piano
 - Reading text books
+
+
+## Awards & Honors
+**Université de Montréal**
+- **[2019 May]** Consulate General in Montreal, Quebec Education Board Scholarship<br /><br />
+
+**University of Ulsan**
+- **[2018 Oct]** Korean Univ CK project, Project Report Award
+- **[2018 Aug]** Superiority, Scholarship
+- **[2018 Mar]** A scholarship in Specialization
+- **[2017 Aug]** Korean Univ CK project, International Exchange Student Scholarship
+- **[2017 Jun]** TOEIC Contest Winner Award
+- **[2016 Nov]** TOEIC Contest Winner Award
+- **[2015 Oct]** TOEIC Contest Winner Award
 
 
 ## Contact Information
