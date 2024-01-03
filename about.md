@@ -1,10 +1,8 @@
 ---
 permalink: /about
 layout: article
-tags: AboutMe
 ---
 
-# About Me
 
 ## Introduction
 Hello! My name is **Hyung Joon LEE**. 
@@ -38,7 +36,7 @@ Currently, I am a **student** at **BCIT(British Columbia Institute of Technology
 
 ## Projects
 1. **[Advanced Packet Analysis Tool]** <br />
-Currently, developing packet analysis tool integrated with Snort3, using Qt6 framework for GUI. <br />
+Currently, developing packet analysis tool integrated with Snort3, using C++14 and Qt6 framework for GUI. <br />
 <br />
 2. **[DNS spoofing program]** [Link to project](https://github.com/HyungJoonLEE/COMP8505_assignment4) <br />
 Creating RAW sockets to control data packets, modifies packet headers(Ethernet, ARP, DNS, IPv4),
@@ -65,8 +63,8 @@ principles of Seq and Ack. <br />
 
 ## Contact Information
 - **Email**: klaiden92@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/hyungjoon-lee-5737a5204/)
-- **GitHub**: [Your GitHub Profile](https://github.com/HyungJoonLEE?tab=repositories)
+- **LinkedIn**: [Click Here!](https://www.linkedin.com/in/hyungjoon-lee-5737a5204/)
+- **GitHub**: [Click Here!](https://github.com/HyungJoonLEE?tab=repositories)
 
 ---
 
