@@ -9,9 +9,8 @@ type: cover
 image:
 src: 
 ---
-# Linked List
 
-A linked list is a collection of elements, called nodes, 
+A linked list data structure that is a collection of elements, called nodes, 
 which consists data and a reference (or link) to the next node in the sequence. 
 This structure allows for efficient insertion and deletion of elements.
 
