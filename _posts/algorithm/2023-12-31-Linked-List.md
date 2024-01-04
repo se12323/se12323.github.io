@@ -14,6 +14,27 @@ A linked list data structure that is a collection of elements, called nodes,
 which consists data and a reference (or link) to the next node in the sequence. 
 This structure allows for efficient insertion and deletion of elements.
 
+## Questions List
+
+### Mth-to-Last Element of a Linked List
+- **Solution 1:** Traverse and use other data structure to store index <br>
+- **Solution 2:** Use Doubly linked list <br>
+- **Solution 3:** Beginning elements from first to *m* th node from behind is *l*. Therefore, ***l* + *m* = *n***(total). Traverse *l* elements from the beginning of the list <span style="color:red">**(SENSE)**</span><br>
+- **Solution 4:** Use *m* size **queue** (Recommended); keeping a queue *m* elements long <span style="color:red">**(RECOMMEND)**</span><br>
+- **Solution 5:** Use **two pointers**; current position pointer and *m*-behind pointer <span style="color:red">**(RECOMMEND)**</span><br>
+
+### List Flattening  
+- **Solution 1:** Use **BFS**; start with all the first-level nodes followed by all the second, third, ... -level nodes<br>
+- **Solution 2:** traverse the first level from the start, following the next pointers. Everytime you encounter node with a child, append the child to the end of the first level and update the tail pointer<br>
+> Start at the begining of the first level  
+> While you are no at the end of the first level  
+> &nbsp;&nbsp;&nbsp;&nbsp; If the current node has a child  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Append the child to the end of the first level  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Update the tail pointer  
+> &nbsp;&nbsp;&nbsp;&nbsp; Advance to next node 
+    
+
+
 ## Types of Linked Lists
 
 - **Singly Linked List**: 
@@ -308,5 +329,80 @@ int main() {
     }
     
     head->clear(&head);
+}
+```
+
+## Mth-to-Last Element of a Linked List - Solution 5
+```c++
+/*
+ * Mongan, J., Kindler, N., & Giguère, E. (2012). 
+ * Programming Interviews Exposed: Secrets to Landing Your Next Job (3rd ed.). p.52
+ */
+LinkedList *findMToLastElement(LinkedList *head, int m) {
+    LinkedList *current, *mBehind;
+    int i = 0;
+    
+    if (!head) return NULL;
+    
+    /* Advance current m elements from beginning
+     * checking for the end of the list     
+     */
+    current = head;
+    for (int i = 0; i < m; i++) {
+        if (current->next) 
+            current = current->next;
+        else
+            return NULL;
+    }
+    
+    /* Start mBehind at beginning and advance pointers
+     * together until current hits last element
+     */
+    mBehind = head;
+    while (current->next) {
+        current = current->next;
+        mBehind = mBehind->next;
+    }
+    
+    /* mBehind now points to the element we were
+     * searching for, so return it
+     */
+    return mBehind;
+}
+```
+
+## List Flattening - Solution 2
+```c++
+/*
+ * Mongan, J., Kindler, N., & Giguère, E. (2012). 
+ * Programming Interviews Exposed: Secrets to Landing Your Next Job (3rd ed.). p.55
+ */
+void *flattenList(Node *head, Node **tail) {
+    Node *curNode = head;
+    while (curNode) {
+        /* The Current node has a child */
+        if (curNode->child) {
+            append(curNode->child, tail);
+        }
+        curNode = curNode->next;
+    }
+}
+
+
+/* Appends the child list to the end of the tail and updates the tail */
+void append(Node *child, Node **tail) {
+    Node *curNode;
+    
+    /* Append the child list to the end */
+    (*tail)->next = child;
+    child->prev = *tail;
+    
+    /* Find the new tail, which is the end of the appended child list */
+    for (curNode = child; curNode->next; curNode = curNode->next) {
+        /* Intentionally empty for loop */
+    }
+    
+    /* Update the tail pointer now that curNode is the new tail */
+    *tail = curNode;
 }
 ```

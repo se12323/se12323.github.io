@@ -15,7 +15,7 @@ I'm passionate about **network security**, **solving problems**, and **taking pi
 
 
 ## Professional Background
-I have a background in **Biology - Immunology**, and **Computer Science**. <br /> 
+I have a background in **Biology - Immunology**, and **Computer Science**. <br> 
 Currently, I am a student at **BCIT(British Columbia Institute of Technology)**.
 
 
@@ -38,23 +38,23 @@ Currently, I am a student at **BCIT(British Columbia Institute of Technology)**.
 
 
 ## Projects
-1. **[Advanced Packet Analysis Tool]** <br />
+1. **[Advanced Packet Analysis Tool]** <br>
 Currently, developing packet analysis tool integrated with Snort3, using C++14 and Qt6 framework for GUI. <br />
 <br />
-2. **[DNS spoofing program]** [Link to project](https://github.com/HyungJoonLEE/COMP8505_assignment4) <br />
+2. **[DNS spoofing program]** [Link to project](https://github.com/HyungJoonLEE/COMP8505_assignment4) <br>
 Creating RAW sockets to control data packets, modifies packet headers(Ethernet, ARP, DNS, IPv4),
 and intercepts network traffic to manipulate DNS queries and responses for educational and ethical 
-penetration testing purposes. <br />
-<br />
-3. **[Distributed System Brute Force Password Cracker using Salt]** [Link to project](https://github.com/HyungJoonLEE/COMP8005_project) <br />
+penetration testing purposes. <br>
+<br>
+3. **[Distributed System Brute Force Password Cracker using Salt]** [Link to project](https://github.com/HyungJoonLEE/COMP8005_project) <br>
 Using OpenMP library, multi-threaded, with a server-client architecture, enabling parallel processing 
 across several nodes. The server, or 'main' tower dispatches hashed value, salts, and thread number 
-allocation to clients, which then utilize brute force techniques across MD5, Yescrypt, and SHA256 algorithms. <br />
-<br />
-4. **[Artificial Packet Dropper]** [Link to project](https://github.com/HyungJoonLEE/COMP7005_project) <br />
+allocation to clients, which then utilize brute force techniques across MD5, Yescrypt, and SHA256 algorithms. <br>
+<br>
+4. **[Artificial Packet Dropper]** [Link to project](https://github.com/HyungJoonLEE/COMP7005_project) <br>
 Sending and receiving data between three computers using multiplexing funcion(select), the program randomly 
 drops packets according to the value entered by the user in the proxy. The program aims showing the operating 
-principles of Seq and Ack. <br />
+principles of Seq and Ack. <br>
 
 
 ## Interests
@@ -66,7 +66,7 @@ principles of Seq and Ack. <br />
 
 ## Awards & Honors
 **Université de Montréal**
-- **[2019 May]** Consulate General in Montreal, Quebec Education Board Scholarship<br /><br />
+- **[2019 May]** Consulate General in Montreal, Quebec Education Board Scholarship<br><br>
 
 **University of Ulsan**
 - **[2018 Oct]** Korean Univ CK project, Project Report Award
