@@ -9,7 +9,47 @@ type: cover
 image:
 src: 
 ---
-    
+# Linked List
+
+A linked list is a collection of elements, called nodes, 
+which consists data and a reference (or link) to the next node in the sequence. 
+This structure allows for efficient insertion and deletion of elements.
+
+## Types of Linked Lists
+
+- **Singly Linked List**: 
+Each node contains data and a pointer to the next node. 
+The last node points to null, indicating the end of the list.
+
+- **Doubly Linked List**: Each node contains data, a pointer to the next node, 
+and a pointer to the previous node. This allows traversal in both directions.
+
+- **Circular Linked List**: Similar to singly or doubly linked lists, 
+but the last node points back to the first node, forming a circle.
+
+## Advantages
+
+- **Dynamic Size**: Unlike arrays, linked lists are dynamic and can grow or shrink in size.
+
+- **Efficient Insertions/Deletions**: Adding or removing elements from a linked list is generally more efficient than doing so in an array, especially for large datasets.
+
+- **No Memory Wastage**: Linked lists allocate memory as needed, so there's no unused memory like in arrays.
+
+## Disadvantages
+
+- **Memory Usage**: Each node in a linked list requires extra memory for the pointer(s), which can be significant compared to arrays.
+
+- **Sequential Access**: Elements in a linked list must be accessed sequentially, starting from the first node, making random access slow.
+
+- **Complexity**: Implementing and managing a linked list is more complex than an array.
+
+## Basic Operations
+
+- **Traversal**: Going through each node, usually starting from the head, until you reach the end (or a specific condition).
+- **Insertion**: Adding a node to the list, either at the beginning, end, or at a specific position.
+- **Deletion**: Removing a node from the list, which involves adjusting the pointers of adjacent nodes.
+- **Search**: Finding a node in the list with a specific value.
+
 ## LinkedList.h 
 ```c++
 #ifndef PIE_LINKEDLIST_H
@@ -221,7 +261,6 @@ void LinkedList<T>::clear(LinkedList<T> **head) {
     if (*head == nullptr) return;
     LinkedList<T> *delNode = *head;
     while (delNode) {
-        // Todo: if Node data used dynamic memory, need to delete as well
         LinkedList<T> *after = delNode->next;
         delete delNode;
         delNode = after;
@@ -257,8 +296,7 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         card randomCard = generateRandomCard();
-        // TODO: This is for original LinkedList
-        head->insertToFront(&head, randomCard);
+        head->insertAtFront(&head, randomCard);
     }
 
 //    for (auto it = head->begin(); it != head->end(); ++it) {
