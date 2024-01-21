@@ -80,26 +80,19 @@ header:
 
   - titles:
         # @start locale config
-        en      : &EN       BCIT
+        en      : &EN       Cryptology
         en-GB   : *EN
         en-US   : *EN
         en-CA   : *EN
         en-AU   : *EN
-        zh-Hans : &ZH_HANS  BCIT
-        zh      : *ZH_HANS
-        zh-CN   : *ZH_HANS
-        zh-SG   : *ZH_HANS
-        zh-Hant : &ZH_HANT  BCIT
-        zh-TW   : *ZH_HANT
-        zh-HK   : *ZH_HANT
-        ko      : &KO       BCIT
+        ko      : &KO       암호학
         ko-KR   : *KO
-        fr      : &FR       BCIT
+        fr      : &FR       Cryptology
         fr-BE   : *FR
         fr-CA   : *FR
         fr-CH   : *FR
         fr-FR   : *FR
         fr-LU   : *FR
-        tr      : &TR       BCIT
+        tr      : &TR       Cryptology
         # @end locale config
-        url: /bcit.html
+    url: /cryptology.html

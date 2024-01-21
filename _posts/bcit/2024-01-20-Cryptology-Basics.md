@@ -1,0 +1,76 @@
+---
+permalink: /cryptology/basics
+layout: article
+title: Basics
+tags: FiniteFields GaloisFields
+categories: cryptology
+article_header:
+type: cover
+image:
+src:
+---
+
+## Terminology
+- Common Divisor 공약수
+- Common Multiple 공배수
+- <span style="color:red">**Prime Number 소수**</span> 
+- Least[Lowest] Common Multiple 최소 공배수
+- <span style="color:red">**Greatest Common Divisor 최대 공약수**</span>
+- Identity element 항등원
+- Inverse element 역원
+- Operating rules of real numbers
+  - Commutative property 교환 법칙
+  - Associative property 결합 법칙
+  - Distributive property 분배 법칙
+
+
+## Greatest Common Divisor
+The largest positive integer that divides both ***i*** and ***j*** with no remainder on division  
+It is also known as the **Greatest Common Factor** or the **Highest Common Factor**  
+두 수가 서로 공통으로 가지고 있는 약수 중 가장 큰 수
+
+**Ex)** GCD(12, 18)  
+**Divisor of 12:** 1, 2, 3, 4, <span style="color:blue">**6**</span>, 12  
+**Divisor of 18:** 1, 2, 3, <span style="color:blue">**6**</span>, 9, 18  
+**➤ GCD(12, 18) = 6**
+
+
+## Prime Number
+An integer ***p*** is a prime number if and only if its only divisors are 
+<span style="color:red">**1**</span> and <span style="color:red">***p***</span>
+
+
+## Identity Element
+<span style="color:red">**Pre-Condition**</span>
+- Closed for certain operations   
+- Satisfies Commutative property   
+
+When the result of operating an arbitrary element ***a*** and element ***e*** of a set ***S*** is ***a***, 
+we call ***e*** is the identity for the operation = <span style="color:red">***a number that allows the result of an operation to be itself***</span>   
+연산을 한 결과가 자기 자신이 되도록 하는 수 = **a ∈ S, <span style="color:red">a ⊙ e = e ⊙ a = a</span>** **➤ e (e ∈ S)**   
+- **+** operation: **0**   
+**Ex)** 3 + 0 = 3  
+- **×** operation: **1**   
+**Ex)** 7 * 1 = 7    
+
+
+## Inverse element
+When the result of operating an arbitrary element ***a*** and ***x*** of a set ***S*** becomes the identity ***e***, 
+***x*** is called the inverse of a for the operation =  <span style="color:red">***a number that produces an Identity Element***</span>    
+연산한 결과가 항등원이 되도록 하는 수 = **a ∈ S, <span style="color:red">a ⊙ x = x ⊙ a = e</span>** **➤ x (x ∈ S)**    
+**Ex)**   
+When the operation △ is defined as a △ b = a + b - 3 for all real numbers,  
+find the identity and the inverse element of 5 for the operation △    
+a + e - 3 = a  
+➤ e = 3 (Identity Element)    
+> The inverse element of 5 is x, the result of which is the identity element 3 
+
+5 △ x = x △ 5 = 3   
+5 + x - 3 = 3   
+➤ x = 1 (Inverse Element)
+
+
+## Operating rules
+- Commutative property: **a ⊙ b = b ⊙ a**  
+- Associative property: **(a ⊙ b) ⊙ c = a ⊙ (b ⊙ c)**  
+- Distributive property: **(a ⊙ b) △ c = (a △ c) ⊙ (b △ c)**

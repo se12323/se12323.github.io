@@ -2,7 +2,7 @@
 permalink: /algorithm/bst
 layout: article
 title: Binary Search Tree
-tags: BinarySearchTree, BST
+tags: BinarySearchTree BST
 categories: algorithm
 article_header:
 type: cover
