@@ -201,10 +201,6 @@ exclude:
   - /test
   - /vendor
 
-#collections:
-#  algorithm:
-#    output: true
-
 defaults:
   - scope:
       path: ""
@@ -219,13 +215,6 @@ defaults:
       show_subscribe: false
       pageview: true
 
-  ## Algorithm
-#  - scope:
-#      path:
-#      type: algorithm
-#    values:
-#      nav_key: algorithm
-#      show_date: false
 
 
 ## => Plugins
