@@ -5,36 +5,20 @@ layout: article
 
 
 ## Introduction
-Hello! My name is **Klaiden**, the owner of this page.
-
-This website is for my notes and travel recording.
-
-I'm passionate about **network security**, **solving problems**, and **taking pictures**.
-
-![Your Photo](/assets/images/about/about.jpg)
-
-
-## Professional Background
-I have a background in **Biology - Immunology**, and **Computer Science**. <br> 
-Currently, I am a student at **BCIT(British Columbia Institute of Technology)**.
-
-
-### Experience
-- **[2022 - 2022]**: BCIT ISEP project(COMP 4800) at Fortinet
-- **[2019 - 2020]**: Researcher at IRCM (Institut de recherches cliniques de Montréal)
-- **[2018 - 2018]**: Internship at SAIHST (Samsung Advanced Institute for Health Sciences & Technology)
-
-
-## Education
-- **[2022 - 2024]** : B.Sc. - Applied Computer Science (Network Security Applications Development Option) at BCIT
-- **[2020 - 2022]** : Diploma - Computer Systems (Data communications & Internetworking option) at BCIT
-- **[2019 - 2020]** : Quit graduate studies - Microbiology and Immunology at Université de Montréal
-- **[2015 - 2019]** : B.Sc. - Biology at University of Ulsan
+Hello! My name is **Hyung**, the owner of this page. <br> 
+I both majored in **Computer Science** and **Biology / Immunology** <br> 
 
 
 ## Skills
-- **Technical**: C, C++, Python, HTML, CSS, Javascript
+- **Technical**: C, C++, Python, Linux, Git
 - **Soft Skills**: Teamwork, Adaptability, Work Ethic, Interpersonal Skills
+
+
+### Experience
+- **[2022 - 2022]**: ISEP project at Fortinet
+- **[2019 - 2020]**: Researcher at IRCM 
+- **[2018 - 2018]**: Internship at SAIHST 
+
 
 
 ## Projects
@@ -57,21 +41,30 @@ drops packets according to the value entered by the user in the proxy. The progr
 principles of Seq and Ack. <br>
 
 
-## Interests
-- Travel around the world
-- Taking pictures
-- Playing the piano
-- Reading text books
+## Education
+- **[2022 - 2024]** : **[BSc]** BCIT - Applied Computer Science (Network Security Applications Development) **[with honors]**
+- **[2020 - 2022]** : **[Dip]** BCIT - Computer Systems Technology (Data communications & Internetworking)
+- **[2019 - 2020]** : **[Msc]** UdeM - Molecular Biology / Immunology (Dropped)
+- **[2018 - 2019]** : **[BSc]** UOU - Bio Technology
+- **[2017 - 2018]** : **[BSc]** NWMSU - Biology (International Exchange Student) 
+- **[2015 - 2017]** : **[BSc]** UOU - Biology 
 
 
 ## Awards & Honors
+**British Columbia Institute of Technology**
+- **[2024 June]** Graduate with Distinction
+- **[2024 May]**: Vancouver Developer Meeting Hackathon
+- **[2021 Dec]**: BCIT Hackathon<br><br>
+
+
 **Université de Montréal**
 - **[2019 May]** Consulate General in Montreal, Quebec Education Board Scholarship<br><br>
+
 
 **University of Ulsan**
 - **[2018 Oct]** Korean Univ CK project, Project Report Award
 - **[2018 Aug]** Superiority, Scholarship
-- **[2018 Mar]** A scholarship in Specialization
+- **[2018 Mar]** A scholarship in Specialization - Bio Tech
 - **[2017 Aug]** Korean Univ CK project, International Exchange Student Scholarship
 - **[2017 Jun]** TOEIC Contest Winner Award
 - **[2016 Nov]** TOEIC Contest Winner Award
@@ -82,6 +75,15 @@ principles of Seq and Ack. <br>
 - **Email**: klaiden92@gmail.com
 - **LinkedIn**: [Click Here!](https://www.linkedin.com/in/hyungjoon-lee-5737a5204/)
 - **GitHub**: [Click Here!](https://github.com/HyungJoonLEE?tab=repositories)
+
+
+## Interests
+- Learning new technology
+- Practicing English
+- Taking pictures
+- Playing the piano
+- Reading text books
+
 
 ---
 
