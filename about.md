@@ -4,9 +4,14 @@ layout: article
 ---
 
 
+## Contact Information
+- **Email**: klaiden92@gmail.com
+- **LinkedIn**: [Click Here!](https://www.linkedin.com/in/hyungjoon-lee-5737a5204/)
+- **GitHub**: [Click Here!](https://github.com/HyungJoonLEE?tab=repositories)
+
+
 ## Introduction
-Hello! My name is **Hyung**, the owner of this page. <br> 
-I both majored in **Computer Science** and **Biology / Immunology** <br> 
+Hello! My name is **Klaiden**, a recent graduate skilled in C++ and C, enthusiastic about using these programming languages to create cutting-edge software solutions. I am seeking a dynamic and challenging role that allows me to advance my skills and contribute significantly to the company's success.<br> 
 
 
 ## Skills
@@ -42,12 +47,11 @@ principles of Seq and Ack. <br>
 
 
 ## Education
-- **[2022 - 2024]** : **[BSc]** BCIT - Applied Computer Science (Network Security Applications Development) **[with honors]**
-- **[2020 - 2022]** : **[Dip]** BCIT - Computer Systems Technology (Data communications & Internetworking)
+- **[2022 - 2024]** : **[BSc]** BCIT - Applied Computer Science (Network Security Applications Development)
+- **[2020 - 2022]** : **[Dipl]** BCIT - Computer Systems Technology (Data communications & Internetworking)
 - **[2019 - 2020]** : **[Msc]** UdeM - Molecular Biology / Immunology (Dropped)
-- **[2018 - 2019]** : **[BSc]** UOU - Bio Technology
-- **[2017 - 2018]** : **[BSc]** NWMSU - Biology (International Exchange Student) 
-- **[2015 - 2017]** : **[BSc]** UOU - Biology 
+- **[2017 - 2018]** : **[BSc]** NWMSU - International Exchange Student
+- **[2015 - 2019]** : **[BSc]** UOU - Biology 
 
 
 ## Awards & Honors
@@ -66,15 +70,7 @@ principles of Seq and Ack. <br>
 - **[2018 Aug]** Superiority, Scholarship
 - **[2018 Mar]** A scholarship in Specialization - Bio Tech
 - **[2017 Aug]** Korean Univ CK project, International Exchange Student Scholarship
-- **[2017 Jun]** TOEIC Contest Winner Award
-- **[2016 Nov]** TOEIC Contest Winner Award
-- **[2015 Oct]** TOEIC Contest Winner Award
-
-
-## Contact Information
-- **Email**: klaiden92@gmail.com
-- **LinkedIn**: [Click Here!](https://www.linkedin.com/in/hyungjoon-lee-5737a5204/)
-- **GitHub**: [Click Here!](https://github.com/HyungJoonLEE?tab=repositories)
+- **[2015 2016 2017]** TOEIC Contest Winner Award
 
 
 ## Interests
